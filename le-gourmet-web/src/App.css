@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --text-h: #ffffff;
+  --background: #111111;
+  --primary: #c5a46d;
+}
+
+body {
+  background: var(--background);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  padding: 5px;
+  text-decoration: none;
+  color: var(--text-h);
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+nav h1 {
+  font-size: 24px;
+  margin: 0;
+  letter-spacing: 2px;
+}
