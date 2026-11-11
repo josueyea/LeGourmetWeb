@@ -14,7 +14,7 @@ html {
 }
 
 main {
-  padding-top: 100px;
+  padding-top: 120px;
 }
 
 section {
@@ -105,16 +105,14 @@ nav .nav-links a:hover::after {
 
 #hero {
   width: 100%;
-  min-height: calc(100vh - 80px);
+  min-height: calc(100vh - 120px);
   padding: 60px 20px;
-
+  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   text-align: center;
-
   background:
     linear-gradient(
       rgba(0, 0, 0, 0.48),
@@ -461,13 +459,15 @@ footer p {
 }
 
 @media (max-width: 768px) {
-
+  main {
+    padding-top: 75px;
+  }
   nav {
-    height: 100px;
+    height: 75px;
     min-height: 75px;
     padding: 0 5%;
     gap: 15px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     position: fixed;
     top: 0;
@@ -533,8 +533,11 @@ footer p {
   }
 
   #hero {
-    min-height: calc(100vh - 100px);
-    padding: 50px 18px;
+    min-height: 100svh;
+    height: 100svh;
+    padding: 75px 18px 0;
+    margin: 0;
+    background-position: center center;
   }
 
   #hero h1 {
