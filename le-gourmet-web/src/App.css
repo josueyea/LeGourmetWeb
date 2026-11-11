@@ -14,7 +14,7 @@ html {
 }
 
 main {
-  padding-top: 120px;
+  padding-top: 0;
 }
 
 section {
@@ -105,8 +105,9 @@ nav .nav-links a:hover::after {
 
 #hero {
   width: 100%;
-  min-height: calc(100vh - 120px);
-  padding: 60px 20px;
+  min-height: 100vh;
+  height: 100vh;
+  padding: 120px 20px;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -118,10 +119,10 @@ nav .nav-links a:hover::after {
       rgba(0, 0, 0, 0.48),
       rgba(0, 0, 0, 0.68)
     ),
-    url('./assets/legourmet-bg.jpg');
+    url('./assets/fondo-prueba.jpg');
 
   background-size: cover;
-  background-position: center 45%;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -197,15 +198,11 @@ nav .nav-links a:hover::after {
   margin-bottom: 50px;
 }
 
-/* CONTENEDOR DE PLATOS */
-
 .platos-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
-
-/* TARJETAS */
 
 .plato-card {
   background: #191919;
@@ -227,8 +224,6 @@ nav .nav-links a:hover::after {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
 }
 
-/* IMÁGENES */
-
 .plato-card img {
   order: -1;
 
@@ -242,8 +237,6 @@ nav .nav-links a:hover::after {
   margin: 0 0 20px;
 }
 
-/* NOMBRE DEL PLATO */
-
 .plato-card h3 {
   order: 0;
 
@@ -254,8 +247,6 @@ nav .nav-links a:hover::after {
   color: var(--primary);
   margin: 0 0 12px;
 }
-
-/* DESCRIPCIÓN Y PRECIO */
 
 .plato-card p {
   order: 1;
@@ -269,8 +260,6 @@ nav .nav-links a:hover::after {
   margin: 0 0 15px;
   min-height: 48px;
 }
-
-/* PRECIO */
 
 .plato-card p:last-of-type {
   order: 2;
